@@ -99,3 +99,8 @@ See `app/src/main/assets/models/README.md`. Without ARCore or GLB files, the AR 
 
 The mock-up uses Inter. The app uses the system sans-serif by default; to switch to Inter, add the TTF files to
 `res/font` and update `ui/theme/Type.kt` (instructions in that file).
+
+## Web version (GitHub Pages)
+A browser version of the same app lives in `docs/` (plain HTML/CSS/JS, no build).
+Enable it: Settings → Pages → Deploy from a branch → `main` / `/docs`.
+URL: https://ekuai1952.github.io/NUVION/
