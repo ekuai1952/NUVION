@@ -140,4 +140,43 @@
     <string name="result_open_map">Mission map</string>
     <string name="result_retry">Try again</string>
     <string name="result_to_topics">Back to topics</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_default_name">Learner</string>
+    <string name="profile_level">Level %1$d</string>
+    <string name="profile_next_level">To next level</string>
+    <string name="profile_edit_name">Edit name</string>
+    <string name="profile_name_label">Your name</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_cancel">Cancel</string>
+    <string name="profile_progress">Progress</string>
+    <string name="profile_week_total">%1$d XP this week</string>
+    <string name="profile_day_xp_cd">%1$s: %2$d XP</string>
+    <string name="profile_week_empty">No XP this week yet. Start with a lesson!</string>
+    <string name="profile_achievements">Achievements</string>
+    <string name="profile_statistics">Statistics</string>
+    <string name="profile_stat_topics">Topics</string>
+    <string name="profile_stat_topics_value">%1$d / %2$d</string>
+    <string name="profile_stat_accuracy">Accuracy</string>
+    <string name="profile_stat_streak">Streak</string>
+    <plurals name="profile_streak_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="profile_continue_learning">Continue learning</string>
+    <string name="ach_unlocked">unlocked</string>
+    <string name="ach_locked">locked</string>
+    <string name="ach_atom_explorer">Atom Explorer</string>
+    <string name="ach_atom_explorer_desc">Complete your first lesson</string>
+    <string name="ach_quest_master">Quest Master</string>
+    <string name="ach_quest_master_desc">Pass your first quiz</string>
+    <string name="ach_problem_solver">Problem Solver</string>
+    <string name="ach_problem_solver_desc">Solve 5 problems</string>
+    <string name="ach_perfect_score">Perfect Score</string>
+    <string name="ach_perfect_score_desc" formatted="false">Get 100% on a quiz</string>
+    <string name="ach_mission_pilot">Mission Pilot</string>
+    <string name="ach_mission_pilot_desc">Complete a whole topic</string>
+    <string name="ach_nuclear_master">Nuclear Master</string>
+    <string name="ach_nuclear_master_desc">Complete all topics</string>
 </resources>

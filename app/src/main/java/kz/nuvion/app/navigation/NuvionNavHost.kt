@@ -22,6 +22,7 @@ import kz.nuvion.app.ui.screens.library.LibraryDetailRoute
 import kz.nuvion.app.ui.screens.library.LibraryRoute
 import kz.nuvion.app.ui.screens.missions.MissionMapRoute
 import kz.nuvion.app.ui.screens.practice.PracticeRoute
+import kz.nuvion.app.ui.screens.profile.ProfileRoute
 import kz.nuvion.app.ui.screens.quiz.QuizRoute
 import kz.nuvion.app.ui.screens.result.ResultRoute
 import kz.nuvion.app.ui.screens.topics.TopicsRoute
@@ -60,9 +61,16 @@ fun NuvionNavHost(
         composable(Routes.HOME) {
             HomeRoute(
                 onStart = { navController.navigate(Routes.TOPICS) { launchSingleTop = true } },
-                onContinue = { topicId -> navController.navigate(Routes.lesson(topicId)) },
+                onContinue = { navController.navigate(Routes.PROFILE) { launchSingleTop = true } },
                 onTopics = { navController.navigate(Routes.TOPICS) { launchSingleTop = true } },
                 onArLab = { navController.navigate(Routes.arLab()) }
+            )
+        }
+
+        composable(Routes.PROFILE) {
+            ProfileRoute(
+                onBack = { navController.popBackStack() },
+                onContinueLearning = { topicId -> navController.navigate(Routes.lesson(topicId)) }
             )
         }
 

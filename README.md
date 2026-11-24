@@ -53,20 +53,28 @@ app/src/main/java/kz/nuvion/app/
 ├── ui/
 │   ├── theme/        Colors, typography, shapes, adaptive dimensions
 │   ├── components/   Buttons, header, cards, progress, atom illustrations, Professor Proton
-│   └── screens/      home, topics, lesson, quiz, practice, library, missions, arlab, result
+│   └── screens/      home, profile, topics, lesson, quiz, practice, library, missions, arlab, result
 └── util/             UiState, AnswerChecker, ArAvailabilityChecker
 ```
 
 ## Navigation routes
 
-`home`, `topics`, `lesson/{topicId}`, `quiz/{topicId}`, `practice/{topicId}`, `library`, `library/{materialId}`,
+`home`, `profile`, `topics`, `lesson/{topicId}`, `quiz/{topicId}`, `practice/{topicId}`, `library`, `library/{materialId}`,
 `missionMap`, `arLab` (optional `?model=`), `result/{type}/{topicId}` (`type` = `quiz` | `practice` | `lesson`).
 
 ## What is stored where
 
 - **Room** (`nuvion.db`): completed lessons, quiz results (last/best score, attempts, whether XP was given),
   solved problems, unlocked missions, total XP, current topic, last opened screen.
-- **DataStore** (`nuvion_settings`): language, first-launch flag, haptic feedback setting.
+- **Room** also keeps an XP history (`xp_events`) for the profile's weekly chart and streak.
+- **DataStore** (`nuvion_settings`): language, first-launch flag, haptic feedback setting, learner's name.
+
+## Profile
+
+"Жалғастыру" on the home screen opens the profile (as in the mock-up): name (editable), level
+(200 XP per level), progress to the next level, XP per day this week, 6 achievements unlocked by real
+progress, statistics (topics, quiz accuracy, streak) and a "Continue learning" button that opens the
+current lesson.
 
 XP rules: lesson +50 once; quiz +100 once, on the first attempt with ≥ 60 % correct; each problem +30 once.
 A mission unlocks when the previous topic's lesson, quiz and all problems are complete.

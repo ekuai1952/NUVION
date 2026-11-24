@@ -21,6 +21,7 @@ enum class ResultType(val route: String) {
 object Routes {
     const val HOME = "home"
     const val TOPICS = "topics"
+    const val PROFILE = "profile"
     const val LESSON = "lesson/{${NavArgs.TOPIC_ID}}"
     const val QUIZ = "quiz/{${NavArgs.TOPIC_ID}}"
     const val PRACTICE = "practice/{${NavArgs.TOPIC_ID}}"

@@ -31,9 +31,14 @@ class SettingsDataStore(context: Context) : SettingsRepository {
             AppSettings(
                 language = AppLanguage.fromTag(prefs[KEY_LANGUAGE]),
                 isFirstLaunch = prefs[KEY_FIRST_LAUNCH] ?: true,
-                hapticsEnabled = prefs[KEY_HAPTICS] ?: true
+                hapticsEnabled = prefs[KEY_HAPTICS] ?: true,
+                userName = prefs[KEY_USER_NAME].orEmpty()
             )
         }
+
+    override suspend fun setUserName(name: String) {
+        dataStore.edit { it[KEY_USER_NAME] = name.trim() }
+    }
 
     override suspend fun setLanguage(language: AppLanguage) {
         dataStore.edit { it[KEY_LANGUAGE] = language.tag }
@@ -51,5 +56,6 @@ class SettingsDataStore(context: Context) : SettingsRepository {
         val KEY_LANGUAGE = stringPreferencesKey("language")
         val KEY_FIRST_LAUNCH = booleanPreferencesKey("first_launch")
         val KEY_HAPTICS = booleanPreferencesKey("haptics_enabled")
+        val KEY_USER_NAME = stringPreferencesKey("user_name")
     }
 }

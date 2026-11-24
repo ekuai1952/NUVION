@@ -73,7 +73,7 @@ import kz.nuvion.app.viewmodel.HomeViewModel
 @Composable
 fun HomeRoute(
     onStart: () -> Unit,
-    onContinue: (topicId: String) -> Unit,
+    onContinue: () -> Unit,
     onTopics: () -> Unit,
     onArLab: () -> Unit,
     viewModel: HomeViewModel = viewModel(factory = AppViewModelProvider.Factory)
@@ -83,7 +83,7 @@ fun HomeRoute(
         state = state,
         onLanguageSelect = viewModel::setLanguage,
         onStart = onStart,
-        onContinue = { state.continueTopicId?.let(onContinue) },
+        onContinue = onContinue,
         onTopics = onTopics,
         onArLab = onArLab,
         onDismissWelcome = viewModel::dismissWelcome,
@@ -185,7 +185,7 @@ fun HomeScreen(
                         onClick = onContinue,
                         modifier = Modifier.fillMaxWidth(),
                         style = NuvionButtonStyle.Secondary,
-                        enabled = !state.isLoading && state.continueTopicId != null,
+                        enabled = !state.isLoading,
                         icon = Icons.AutoMirrored.Filled.ArrowForward
                     )
                     Row(horizontalArrangement = Arrangement.spacedBy(dimens.spaceM)) {

@@ -52,7 +52,9 @@ interface ProgressRepository {
 data class AppSettings(
     val language: AppLanguage = AppLanguage.Default,
     val isFirstLaunch: Boolean = true,
-    val hapticsEnabled: Boolean = true
+    val hapticsEnabled: Boolean = true,
+    /** Learner's display name for the profile; empty until they set it. */
+    val userName: String = ""
 )
 
 /** Language and app settings, persisted in DataStore. */
@@ -61,4 +63,5 @@ interface SettingsRepository {
     suspend fun setLanguage(language: AppLanguage)
     suspend fun setFirstLaunchDone()
     suspend fun setHapticsEnabled(enabled: Boolean)
+    suspend fun setUserName(name: String)
 }

@@ -136,7 +136,8 @@ data class UserProgress(
     val unlockedMissions: Set<String> = emptySet(),
     val currentTopicId: String? = null,
     val lastRoute: String? = null,
-    val lastRewardXp: Int = 0
+    val lastRewardXp: Int = 0,
+    val xpEvents: List<XpEvent> = emptyList()
 ) {
     fun solvedCount(topicId: String): Int = solvedProblems.count { it.startsWith("$topicId/") }
 
@@ -153,6 +154,9 @@ data class UserProgress(
         fun problemKey(topicId: String, problemId: String) = "$topicId/$problemId"
     }
 }
+
+/** One XP award with its time (epoch millis). */
+data class XpEvent(val amount: Int, val timestamp: Long)
 
 /** Where "Continue" should take the learner inside a topic. */
 enum class NextStep { LESSON, QUIZ, PRACTICE, DONE }

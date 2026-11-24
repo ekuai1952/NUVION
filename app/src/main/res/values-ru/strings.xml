@@ -140,4 +140,45 @@
     <string name="result_open_map">Карта миссий</string>
     <string name="result_retry">Пройти снова</string>
     <string name="result_to_topics">Вернуться к темам</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_default_name">Ученик</string>
+    <string name="profile_level">Уровень %1$d</string>
+    <string name="profile_next_level">До следующего уровня</string>
+    <string name="profile_edit_name">Изменить имя</string>
+    <string name="profile_name_label">Ваше имя</string>
+    <string name="profile_save">Сохранить</string>
+    <string name="profile_cancel">Отмена</string>
+    <string name="profile_progress">Прогресс</string>
+    <string name="profile_week_total">%1$d XP за неделю</string>
+    <string name="profile_day_xp_cd">%1$s: %2$d XP</string>
+    <string name="profile_week_empty">На этой неделе ещё нет XP. Начните с урока!</string>
+    <string name="profile_achievements">Достижения</string>
+    <string name="profile_statistics">Статистика</string>
+    <string name="profile_stat_topics">Темы</string>
+    <string name="profile_stat_topics_value">%1$d / %2$d</string>
+    <string name="profile_stat_accuracy">Точность</string>
+    <string name="profile_stat_streak">Серия</string>
+    <plurals name="profile_streak_days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дня</item>
+    </plurals>
+    <string name="profile_continue_learning">Продолжить обучение</string>
+    <string name="ach_unlocked">получено</string>
+    <string name="ach_locked">закрыто</string>
+    <string name="ach_atom_explorer">Исследователь атома</string>
+    <string name="ach_atom_explorer_desc">Завершите первый урок</string>
+    <string name="ach_quest_master">Мастер тестов</string>
+    <string name="ach_quest_master_desc">Сдайте первый тест</string>
+    <string name="ach_problem_solver">Решатель задач</string>
+    <string name="ach_problem_solver_desc">Решите 5 задач</string>
+    <string name="ach_perfect_score">Без ошибок</string>
+    <string name="ach_perfect_score_desc" formatted="false">Пройдите тест на 100%</string>
+    <string name="ach_mission_pilot">Пилот миссий</string>
+    <string name="ach_mission_pilot_desc">Полностью пройдите одну тему</string>
+    <string name="ach_nuclear_master">Мастер ядра</string>
+    <string name="ach_nuclear_master_desc">Пройдите все темы</string>
 </resources>

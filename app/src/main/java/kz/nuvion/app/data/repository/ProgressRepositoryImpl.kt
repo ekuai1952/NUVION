@@ -9,7 +9,9 @@ import kz.nuvion.app.data.local.database.PracticeProgressEntity
 import kz.nuvion.app.data.local.database.QuizResultEntity
 import kz.nuvion.app.data.local.database.UnlockedMissionEntity
 import kz.nuvion.app.data.local.database.UserStateEntity
+import kz.nuvion.app.data.local.database.XpEventEntity
 import kz.nuvion.app.domain.model.QuizResult
+import kz.nuvion.app.domain.model.XpEvent
 import kz.nuvion.app.domain.model.UserProgress
 import kz.nuvion.app.domain.repository.ContentRepository
 import kz.nuvion.app.domain.repository.ProgressRepository
@@ -52,6 +54,8 @@ class ProgressRepositoryImpl(
             lastRoute = state?.lastRoute,
             lastRewardXp = state?.lastRewardXp ?: 0
         )
+    }.combine(dao.observeXpEvents()) { progress, events ->
+        progress.copy(xpEvents = events.map { XpEvent(it.amount, it.timestamp) })
     }
 
     override suspend fun completeLesson(topicId: String, xpReward: Int): Int {
@@ -59,6 +63,7 @@ class ProgressRepositoryImpl(
             val inserted = dao.insertLesson(LessonProgressEntity(topicId, clock())) != -1L
             val xp = if (inserted) xpReward else 0
             updateState { it.copy(totalXp = it.totalXp + xp, lastRewardXp = xp, currentTopicId = topicId) }
+            logXp(xp)
             xp
         }
         unlockNextIfComplete(topicId)
@@ -91,6 +96,7 @@ class ProgressRepositoryImpl(
             )
             val xp = if (giveXp) xpReward else 0
             updateState { it.copy(totalXp = it.totalXp + xp, lastRewardXp = xp, currentTopicId = topicId) }
+            logXp(xp)
             QuizSaveOutcome(xpAwarded = xp, passed = passedNow)
         }
         unlockNextIfComplete(topicId)
@@ -102,6 +108,7 @@ class ProgressRepositoryImpl(
             val inserted = dao.insertPractice(PracticeProgressEntity(topicId, problemId, clock())) != -1L
             val xp = if (inserted) xpReward else 0
             if (xp > 0) updateState { it.copy(totalXp = it.totalXp + xp, currentTopicId = topicId) }
+            logXp(xp)
             xp
         }
         unlockNextIfComplete(topicId)
@@ -121,7 +128,12 @@ class ProgressRepositoryImpl(
             dao.clearPractice()
             dao.clearMissions()
             dao.clearUserState()
+            dao.clearXpEvents()
         }
+    }
+
+    private suspend fun logXp(xp: Int) {
+        if (xp > 0) dao.insertXpEvent(XpEventEntity(amount = xp, timestamp = clock()))
     }
 
     private suspend fun updateState(transform: (UserStateEntity) -> UserStateEntity) {

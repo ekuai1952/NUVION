@@ -20,6 +20,13 @@ object AppViewModelProvider {
                 container().settingsRepository
             )
         }
+        initializer {
+            ProfileViewModel(
+                container().contentRepository,
+                container().progressRepository,
+                container().settingsRepository
+            )
+        }
         initializer { TopicsViewModel(container().contentRepository, container().progressRepository) }
         initializer {
             LessonViewModel(createSavedStateHandle(), container().contentRepository, container().progressRepository)

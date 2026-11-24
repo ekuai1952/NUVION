@@ -144,4 +144,43 @@
     <string name="result_open_map">Миссиялар картасы</string>
     <string name="result_retry">Қайта өту</string>
     <string name="result_to_topics">Тақырыптарға оралу</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_default_name">Оқушы</string>
+    <string name="profile_level">Деңгей %1$d</string>
+    <string name="profile_next_level">Келесі деңгейге</string>
+    <string name="profile_edit_name">Атын өзгерту</string>
+    <string name="profile_name_label">Атыңыз</string>
+    <string name="profile_save">Сақтау</string>
+    <string name="profile_cancel">Болдырмау</string>
+    <string name="profile_progress">Прогресс</string>
+    <string name="profile_week_total">Осы аптада %1$d XP</string>
+    <string name="profile_day_xp_cd">%1$s: %2$d XP</string>
+    <string name="profile_week_empty">Осы аптада әлі XP жоқ. Сабақтан бастаңыз!</string>
+    <string name="profile_achievements">Жетістіктер</string>
+    <string name="profile_statistics">Статистика</string>
+    <string name="profile_stat_topics">Тақырыптар</string>
+    <string name="profile_stat_topics_value">%1$d / %2$d</string>
+    <string name="profile_stat_accuracy">Дәлдік</string>
+    <string name="profile_stat_streak">Тізбектілік</string>
+    <plurals name="profile_streak_days">
+        <item quantity="one">%d күн</item>
+        <item quantity="other">%d күн</item>
+    </plurals>
+    <string name="profile_continue_learning">Оқуды жалғастыру</string>
+    <string name="ach_unlocked">ашылды</string>
+    <string name="ach_locked">жабық</string>
+    <string name="ach_atom_explorer">Атом зерттеуші</string>
+    <string name="ach_atom_explorer_desc">Алғашқы сабақты аяқтаңыз</string>
+    <string name="ach_quest_master">Тест шебері</string>
+    <string name="ach_quest_master_desc">Алғашқы тестті тапсырыңыз</string>
+    <string name="ach_problem_solver">Есепші</string>
+    <string name="ach_problem_solver_desc">5 есеп шығарыңыз</string>
+    <string name="ach_perfect_score">Мінсіз нәтиже</string>
+    <string name="ach_perfect_score_desc" formatted="false">Тестке 100% жауап беріңіз</string>
+    <string name="ach_mission_pilot">Миссия ұшқышы</string>
+    <string name="ach_mission_pilot_desc">Бір тақырыпты толық аяқтаңыз</string>
+    <string name="ach_nuclear_master">Ядро шебері</string>
+    <string name="ach_nuclear_master_desc">Барлық тақырыпты аяқтаңыз</string>
 </resources>

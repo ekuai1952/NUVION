@@ -57,6 +57,16 @@ interface ProgressDao {
     @Upsert
     suspend fun upsertUserState(entity: UserStateEntity)
 
+    // XP history
+    @Query("SELECT * FROM xp_events ORDER BY timestamp")
+    fun observeXpEvents(): Flow<List<XpEventEntity>>
+
+    @Insert
+    suspend fun insertXpEvent(entity: XpEventEntity)
+
+    @Query("DELETE FROM xp_events")
+    suspend fun clearXpEvents()
+
     // Reset
     @Query("DELETE FROM lesson_progress")
     suspend fun clearLessons()
