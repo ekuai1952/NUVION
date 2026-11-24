@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="common_loading">Loading…</string>
+    <string name="common_error">Something went wrong. Please try again.</string>
+    <string name="common_not_found">Content not found</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_save_error">Could not save your progress</string>
+    <string name="xp_value">%1$d XP</string>
+    <string name="xp_reward">+%1$d XP</string>
+    <string name="percent_value">%1$d%%</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_back">Back</string>
+    <string name="cd_language_switcher">Choose language</string>
+    <string name="cd_atom_illustration">Atom model</string>
+
+    <!-- Home -->
+    <string name="home_subtitle">Atomic &amp; Nuclear Physics</string>
+    <string name="home_start">Start learning</string>
+    <string name="home_continue">Continue</string>
+    <string name="home_topics">Topics</string>
+    <string name="home_ar_lab">AR Lab</string>
+    <string name="home_professor">Professor Proton</string>
+    <string name="home_professor_greeting">Hi! I\'m Professor Proton. Ready for a journey into the atom? Every lesson, quiz and problem earns you XP!</string>
+
+    <string name="welcome_title">Welcome to NUVION!</string>
+    <string name="welcome_text">Learn atomic and nuclear physics through lessons, quizzes, problems and 3D models. Finish a whole topic to unlock the next mission.</string>
+    <string name="welcome_ok">Let\'s go</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_haptics">Haptic feedback</string>
+    <string name="settings_reset">Reset progress</string>
+    <string name="settings_reset_confirm">All XP, lessons and quiz results will be deleted. This cannot be undone.</string>
+    <string name="settings_reset_yes">Yes, reset</string>
+    <string name="settings_close">Close</string>
+
+    <!-- Topics -->
+    <string name="topics_title">Topics</string>
+    <string name="topics_subtitle">Choose a topic</string>
+    <string name="topic_test">Quiz</string>
+    <string name="topic_problems">Problems</string>
+    <string name="topic_completed">Completed</string>
+    <string name="topic_progress_cd">Progress %1$d%%</string>
+    <string name="topic_open_lesson">Open lesson</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_map">Map</string>
+
+    <!-- Lesson -->
+    <string name="lesson_3d_model">3D Model</string>
+    <string name="lesson_3d_model_desc">Rotate and zoom the model</string>
+    <string name="lesson_ar_view">View in AR</string>
+    <string name="lesson_complete">Complete lesson (+%1$d XP)</string>
+    <string name="lesson_complete_hint">Finished reading? Mark the lesson as complete to earn XP.</string>
+    <string name="lesson_completed">Lesson completed</string>
+    <string name="lesson_go_test">Go to quiz</string>
+    <string name="lesson_xp_earned">You earned +%1$d XP!</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Quiz</string>
+    <string name="quiz_counter">Question %1$d / %2$d</string>
+    <string name="quiz_question_label">Question %1$d</string>
+    <string name="quiz_check">Check</string>
+    <string name="quiz_next">Next question</string>
+    <string name="quiz_finish">See result</string>
+    <string name="quiz_correct">Correct!</string>
+    <string name="quiz_wrong">Incorrect</string>
+    <string name="quiz_explanation">Explanation</string>
+
+    <!-- Practice -->
+    <string name="practice_title">Practice problems</string>
+    <string name="practice_counter">Problem %1$d / %2$d</string>
+    <string name="practice_problem_label">Problem</string>
+    <string name="practice_solved_badge">Solved</string>
+    <string name="practice_given">Given</string>
+    <string name="practice_find">Find</string>
+    <string name="practice_formula">Formula</string>
+    <string name="practice_show_hint">Show hint</string>
+    <string name="practice_hide_hint">Hide hint</string>
+    <string name="practice_answer_label">Your answer</string>
+    <string name="practice_answer_placeholder">e.g. 2.12</string>
+    <string name="practice_invalid_number">Enter a number (e.g. 2.12 or 2,12)</string>
+    <string name="practice_check">Check</string>
+    <string name="practice_correct">Correct! Review the solution.</string>
+    <string name="practice_wrong">Not quite. Try again or view the solution.</string>
+    <string name="practice_answer_is">Answer: %1$s %2$s</string>
+    <string name="practice_solution">Solution</string>
+    <string name="practice_try_again">Try again</string>
+    <string name="practice_show_solution">Solution</string>
+    <string name="practice_next">Next problem</string>
+    <string name="practice_finish">Finish</string>
+
+    <!-- Library -->
+    <string name="library_title">Mini library</string>
+    <string name="library_subtitle">Particles and concepts</string>
+    <string name="library_materials_available">%1$d materials available</string>
+    <string name="library_definition">Definition</string>
+    <string name="library_characteristics">Characteristics</string>
+    <string name="library_fact">Fun fact</string>
+
+    <!-- Mission map -->
+    <string name="mission_title">Mission map</string>
+    <string name="mission_continue">Continue</string>
+    <string name="mission_all_done">All missions completed!</string>
+    <string name="mission_progress">%1$d / %2$d missions completed</string>
+    <string name="mission_current">Current mission: %1$s</string>
+    <string name="mission_locked_msg">This mission is still locked. Finish the lesson, quiz and problems of the previous topic.</string>
+    <string name="mission_state_completed">completed</string>
+    <string name="mission_state_current">current mission</string>
+    <string name="mission_state_locked">locked</string>
+
+    <!-- AR lab -->
+    <string name="ar_title">AR Lab</string>
+    <string name="ar_subtitle">3D models</string>
+    <string name="ar_checking">Checking AR support…</string>
+    <string name="ar_unavailable">AR is not available on this device. An interactive 3D model is shown below.</string>
+    <string name="ar_supported_glb">ARCore is supported. Model %1$s found.</string>
+    <string name="ar_supported_no_glb">ARCore is supported. Add assets/models/%1$s for AR mode. Showing the 3D model for now.</string>
+    <string name="ar_hint_gestures">Drag to rotate, pinch to zoom, double-tap to reset.</string>
+    <string name="ar_auto_rotate">Auto-rotate</string>
+    <string name="ar_model_bohr">Bohr atom</string>
+    <string name="ar_model_proton">Proton</string>
+    <string name="ar_model_neutron">Neutron</string>
+    <string name="ar_model_reaction">Nuclear reaction</string>
+
+    <!-- Result -->
+    <string name="result_quiz_passed">Quiz passed!</string>
+    <string name="result_quiz_failed">Give it another try</string>
+    <string name="result_practice_title">Problems finished!</string>
+    <string name="result_lesson_title">Lesson completed!</string>
+    <string name="result_score">%1$d / %2$d correct</string>
+    <string name="result_solved">%1$d / %2$d problems solved</string>
+    <string name="result_xp_already">No new XP this time — it was already awarded.</string>
+    <string name="result_xp_need_pass" formatted="false">Answer at least 60% correctly to earn XP.</string>
+    <string name="result_total_xp">Total: %1$d XP</string>
+    <string name="result_topic_complete">Topic fully completed! The next mission is unlocked.</string>
+    <string name="result_next_lesson">Go to lesson</string>
+    <string name="result_next_quiz">Go to quiz</string>
+    <string name="result_next_practice">Go to problems</string>
+    <string name="result_open_map">Mission map</string>
+    <string name="result_retry">Try again</string>
+    <string name="result_to_topics">Back to topics</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_default_name">Learner</string>
+    <string name="profile_level">Level %1$d</string>
+    <string name="profile_next_level">To next level</string>
+    <string name="profile_edit_name">Edit name</string>
+    <string name="profile_name_label">Your name</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_cancel">Cancel</string>
+    <string name="profile_progress">Progress</string>
+    <string name="profile_week_total">%1$d XP this week</string>
+    <string name="profile_day_xp_cd">%1$s: %2$d XP</string>
+    <string name="profile_week_empty">No XP this week yet. Start with a lesson!</string>
+    <string name="profile_achievements">Achievements</string>
+    <string name="profile_statistics">Statistics</string>
+    <string name="profile_stat_topics">Topics</string>
+    <string name="profile_stat_topics_value">%1$d / %2$d</string>
+    <string name="profile_stat_accuracy">Accuracy</string>
+    <string name="profile_stat_streak">Streak</string>
+    <plurals name="profile_streak_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="profile_continue_learning">Continue learning</string>
+    <string name="ach_unlocked">unlocked</string>
+    <string name="ach_locked">locked</string>
+    <string name="ach_atom_explorer">Atom Explorer</string>
+    <string name="ach_atom_explorer_desc">Complete your first lesson</string>
+    <string name="ach_quest_master">Quest Master</string>
+    <string name="ach_quest_master_desc">Pass your first quiz</string>
+    <string name="ach_problem_solver">Problem Solver</string>
+    <string name="ach_problem_solver_desc">Solve 5 problems</string>
+    <string name="ach_perfect_score">Perfect Score</string>
+    <string name="ach_perfect_score_desc" formatted="false">Get 100% on a quiz</string>
+    <string name="ach_mission_pilot">Mission Pilot</string>
+    <string name="ach_mission_pilot_desc">Complete a whole topic</string>
+    <string name="ach_nuclear_master">Nuclear Master</string>
+    <string name="ach_nuclear_master_desc">Complete all topics</string>
+</resources>
