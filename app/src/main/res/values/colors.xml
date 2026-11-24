@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nuvion_background">#FFF7F9FC</color>
+    <color name="nuvion_blue">#FF2F80ED</color>
+    <color name="nuvion_navy">#FF0A1F44</color>
+    <color name="nuvion_yellow">#FFF2C94C</color>
+</resources>

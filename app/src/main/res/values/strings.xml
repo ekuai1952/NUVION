@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kazakh (default language). Android has no separate values-kk folder here on purpose:
+     res/values is used for Kazakh, values-ru for Russian, values-en for English. -->
+<resources>
+    <string name="app_name" translatable="false">NUVION</string>
+
+    <!-- Common -->
+    <string name="common_loading">Жүктелуде…</string>
+    <string name="common_error">Қате орын алды. Қайталап көріңіз.</string>
+    <string name="common_not_found">Мазмұн табылмады</string>
+    <string name="common_retry">Қайталау</string>
+    <string name="common_save_error">Прогресті сақтау мүмкін болмады</string>
+    <string name="xp_value">%1$d XP</string>
+    <string name="xp_reward">+%1$d XP</string>
+    <string name="percent_value">%1$d%%</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_back">Артқа</string>
+    <string name="cd_language_switcher">Тілді таңдау</string>
+    <string name="cd_atom_illustration">Атом моделі</string>
+
+    <!-- Home -->
+    <string name="home_subtitle">Атомдық &amp; Ядролық Физика</string>
+    <string name="home_start">Оқуды бастау</string>
+    <string name="home_continue">Жалғастыру</string>
+    <string name="home_topics">Тақырыптар</string>
+    <string name="home_ar_lab">AR Зертхана</string>
+    <string name="home_professor">Профессор Протон</string>
+    <string name="home_professor_greeting">Сәлем! Мен Профессор Протонмын. Атом әлеміне саяхатқа дайынсың ба? Әр сабақ, тест және есеп саған XP әкеледі!</string>
+
+    <string name="welcome_title">NUVION-ға қош келдіңіз!</string>
+    <string name="welcome_text">Мұнда атом мен ядро физикасын сабақтар, тесттер, есептер және 3D-модельдер арқылы үйренесіз. Тақырыпты толық аяқтасаңыз, келесі миссия ашылады.</string>
+    <string name="welcome_ok">Бастайық</string>
+
+    <string name="settings_title">Баптаулар</string>
+    <string name="settings_haptics">Діріл кері байланысы</string>
+    <string name="settings_reset">Прогресті тазалау</string>
+    <string name="settings_reset_confirm">Барлық XP, сабақтар мен тест нәтижелері жойылады. Бұл әрекетті қайтару мүмкін емес.</string>
+    <string name="settings_reset_yes">Иә, тазалау</string>
+    <string name="settings_close">Жабу</string>
+
+    <!-- Topics -->
+    <string name="topics_title">Тақырыптар</string>
+    <string name="topics_subtitle">Таңдаңыз</string>
+    <string name="topic_test">Тест</string>
+    <string name="topic_problems">Есептер</string>
+    <string name="topic_completed">Аяқталды</string>
+    <string name="topic_progress_cd">Прогресс %1$d%%</string>
+    <string name="topic_open_lesson">Сабақты ашу</string>
+    <string name="nav_library">Кітапхана</string>
+    <string name="nav_map">Карта</string>
+
+    <!-- Lesson -->
+    <string name="lesson_3d_model">3D Model</string>
+    <string name="lesson_3d_model_desc">Модельді айналдырып, жақындатып қараңыз</string>
+    <string name="lesson_ar_view">AR көру</string>
+    <string name="lesson_complete">Сабақты аяқтау (+%1$d XP)</string>
+    <string name="lesson_complete_hint">Теорияны оқып шықтыңыз ба? Сабақты аяқталды деп белгілеп, XP алыңыз.</string>
+    <string name="lesson_completed">Сабақ аяқталды</string>
+    <string name="lesson_go_test">Тестке өту</string>
+    <string name="lesson_xp_earned">+%1$d XP алдыңыз!</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Тест</string>
+    <string name="quiz_counter">Сұрақ %1$d / %2$d</string>
+    <string name="quiz_question_label">Сұрақ %1$d</string>
+    <string name="quiz_check">Тексеру</string>
+    <string name="quiz_next">Келесі сұрақ</string>
+    <string name="quiz_finish">Нәтижені көру</string>
+    <string name="quiz_correct">Дұрыс!</string>
+    <string name="quiz_wrong">Қате</string>
+    <string name="quiz_explanation">Түсіндірме</string>
+
+    <!-- Practice -->
+    <string name="practice_title">Практикалық есептер</string>
+    <string name="practice_counter">Есеп %1$d / %2$d</string>
+    <string name="practice_problem_label">Есептің шарты</string>
+    <string name="practice_solved_badge">Шығарылған</string>
+    <string name="practice_given">Берілгені</string>
+    <string name="practice_find">Табу керек</string>
+    <string name="practice_formula">Формула</string>
+    <string name="practice_show_hint">Кеңес көрсету</string>
+    <string name="practice_hide_hint">Кеңесті жасыру</string>
+    <string name="practice_answer_label">Жауабыңыз</string>
+    <string name="practice_answer_placeholder">Мысалы: 2.12</string>
+    <string name="practice_invalid_number">Сан енгізіңіз (мысалы, 2.12 немесе 2,12)</string>
+    <string name="practice_check">Тексеру</string>
+    <string name="practice_correct">Дұрыс! Шешу жолын қараңыз.</string>
+    <string name="practice_wrong">Жауап дұрыс емес. Қайталап көріңіз немесе шешімін қараңыз.</string>
+    <string name="practice_answer_is">Жауабы: %1$s %2$s</string>
+    <string name="practice_solution">Шешу жолы</string>
+    <string name="practice_try_again">Қайталау</string>
+    <string name="practice_show_solution">Шешімі</string>
+    <string name="practice_next">Келесі есеп</string>
+    <string name="practice_finish">Аяқтау</string>
+
+    <!-- Library -->
+    <string name="library_title">Мини кітапхана</string>
+    <string name="library_subtitle">Бөлшектер мен ұғымдар</string>
+    <string name="library_materials_available">%1$d материал қолжетімді</string>
+    <string name="library_definition">Анықтама</string>
+    <string name="library_characteristics">Сипаттамалары</string>
+    <string name="library_fact">Қызықты факт</string>
+
+    <!-- Mission map -->
+    <string name="mission_title">Миссиялар картасы</string>
+    <string name="mission_continue">Жалғастыру</string>
+    <string name="mission_all_done">Барлық миссия орындалды!</string>
+    <string name="mission_progress">%1$d / %2$d миссия аяқталды</string>
+    <string name="mission_current">Қазіргі миссия: %1$s</string>
+    <string name="mission_locked_msg">Бұл миссия әлі жабық. Алдыңғы тақырыптың сабағын, тестін және есептерін аяқтаңыз.</string>
+    <string name="mission_state_completed">аяқталды</string>
+    <string name="mission_state_current">қазіргі миссия</string>
+    <string name="mission_state_locked">жабық</string>
+
+    <!-- AR lab -->
+    <string name="ar_title">AR Зертхана</string>
+    <string name="ar_subtitle">3D модельдер</string>
+    <string name="ar_checking">AR қолдауы тексерілуде…</string>
+    <string name="ar_unavailable">Бұл құрылғыда AR қолжетімсіз. Төменде интерактивті 3D-модель көрсетілген.</string>
+    <string name="ar_supported_glb">ARCore қолдау көрсетіледі. %1$s моделі табылды.</string>
+    <string name="ar_supported_no_glb">ARCore қолдау көрсетіледі. AR режимі үшін assets/models/%1$s файлын қосыңыз. Әзірге 3D-модель көрсетілген.</string>
+    <string name="ar_hint_gestures">Айналдыру үшін сүйреңіз, масштабтау үшін екі саусақты қолданыңыз, бастапқы күйге қайтару үшін екі рет түртіңіз.</string>
+    <string name="ar_auto_rotate">Автоматты айналу</string>
+    <string name="ar_model_bohr">Бор атомы</string>
+    <string name="ar_model_proton">Протон</string>
+    <string name="ar_model_neutron">Нейтрон</string>
+    <string name="ar_model_reaction">Ядролық реакция</string>
+
+    <!-- Result -->
+    <string name="result_quiz_passed">Тест сәтті өтті!</string>
+    <string name="result_quiz_failed">Тағы бір рет көріңіз</string>
+    <string name="result_practice_title">Есептер аяқталды!</string>
+    <string name="result_lesson_title">Сабақ аяқталды!</string>
+    <string name="result_score">%1$d / %2$d дұрыс</string>
+    <string name="result_solved">%1$d / %2$d есеп шығарылды</string>
+    <string name="result_xp_already">Бұл жолы жаңа XP жоқ — ол бұрын берілген.</string>
+    <string name="result_xp_need_pass" formatted="false">XP алу үшін кемінде 60% дұрыс жауап беріңіз.</string>
+    <string name="result_total_xp">Барлығы: %1$d XP</string>
+    <string name="result_topic_complete">Тақырып толық аяқталды! Келесі миссия ашылды.</string>
+    <string name="result_next_lesson">Сабаққа өту</string>
+    <string name="result_next_quiz">Тестке өту</string>
+    <string name="result_next_practice">Есептерге өту</string>
+    <string name="result_open_map">Миссиялар картасы</string>
+    <string name="result_retry">Қайта өту</string>
+    <string name="result_to_topics">Тақырыптарға оралу</string>
+</resources>

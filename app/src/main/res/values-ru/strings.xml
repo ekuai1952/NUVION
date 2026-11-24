@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="common_loading">Загрузка…</string>
+    <string name="common_error">Произошла ошибка. Попробуйте ещё раз.</string>
+    <string name="common_not_found">Материал не найден</string>
+    <string name="common_retry">Повторить</string>
+    <string name="common_save_error">Не удалось сохранить прогресс</string>
+    <string name="xp_value">%1$d XP</string>
+    <string name="xp_reward">+%1$d XP</string>
+    <string name="percent_value">%1$d%%</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_back">Назад</string>
+    <string name="cd_language_switcher">Выбор языка</string>
+    <string name="cd_atom_illustration">Модель атома</string>
+
+    <!-- Home -->
+    <string name="home_subtitle">Атомная &amp; Ядерная Физика</string>
+    <string name="home_start">Начать обучение</string>
+    <string name="home_continue">Продолжить</string>
+    <string name="home_topics">Темы</string>
+    <string name="home_ar_lab">AR Лаборатория</string>
+    <string name="home_professor">Профессор Протон</string>
+    <string name="home_professor_greeting">Привет! Я Профессор Протон. Готов к путешествию в мир атома? Каждый урок, тест и задача приносят XP!</string>
+
+    <string name="welcome_title">Добро пожаловать в NUVION!</string>
+    <string name="welcome_text">Здесь вы изучите атомную и ядерную физику с помощью уроков, тестов, задач и 3D-моделей. Полностью пройдите тему, чтобы открыть следующую миссию.</string>
+    <string name="welcome_ok">Начнём</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_haptics">Виброотклик</string>
+    <string name="settings_reset">Сбросить прогресс</string>
+    <string name="settings_reset_confirm">Все XP, уроки и результаты тестов будут удалены. Это действие нельзя отменить.</string>
+    <string name="settings_reset_yes">Да, сбросить</string>
+    <string name="settings_close">Закрыть</string>
+
+    <!-- Topics -->
+    <string name="topics_title">Темы</string>
+    <string name="topics_subtitle">Выберите тему</string>
+    <string name="topic_test">Тест</string>
+    <string name="topic_problems">Задачи</string>
+    <string name="topic_completed">Завершено</string>
+    <string name="topic_progress_cd">Прогресс %1$d%%</string>
+    <string name="topic_open_lesson">Открыть урок</string>
+    <string name="nav_library">Библиотека</string>
+    <string name="nav_map">Карта</string>
+
+    <!-- Lesson -->
+    <string name="lesson_3d_model">3D Model</string>
+    <string name="lesson_3d_model_desc">Вращайте и приближайте модель</string>
+    <string name="lesson_ar_view">Смотреть в AR</string>
+    <string name="lesson_complete">Завершить урок (+%1$d XP)</string>
+    <string name="lesson_complete_hint">Прочитали теорию? Отметьте урок завершённым и получите XP.</string>
+    <string name="lesson_completed">Урок завершён</string>
+    <string name="lesson_go_test">Перейти к тесту</string>
+    <string name="lesson_xp_earned">Вы получили +%1$d XP!</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Тест</string>
+    <string name="quiz_counter">Вопрос %1$d / %2$d</string>
+    <string name="quiz_question_label">Вопрос %1$d</string>
+    <string name="quiz_check">Проверить</string>
+    <string name="quiz_next">Следующий вопрос</string>
+    <string name="quiz_finish">Посмотреть результат</string>
+    <string name="quiz_correct">Верно!</string>
+    <string name="quiz_wrong">Неверно</string>
+    <string name="quiz_explanation">Объяснение</string>
+
+    <!-- Practice -->
+    <string name="practice_title">Практические задачи</string>
+    <string name="practice_counter">Задача %1$d / %2$d</string>
+    <string name="practice_problem_label">Условие задачи</string>
+    <string name="practice_solved_badge">Решено</string>
+    <string name="practice_given">Дано</string>
+    <string name="practice_find">Найти</string>
+    <string name="practice_formula">Формула</string>
+    <string name="practice_show_hint">Показать подсказку</string>
+    <string name="practice_hide_hint">Скрыть подсказку</string>
+    <string name="practice_answer_label">Ваш ответ</string>
+    <string name="practice_answer_placeholder">Например: 2.12</string>
+    <string name="practice_invalid_number">Введите число (например, 2.12 или 2,12)</string>
+    <string name="practice_check">Проверить</string>
+    <string name="practice_correct">Верно! Посмотрите ход решения.</string>
+    <string name="practice_wrong">Ответ неверный. Попробуйте ещё раз или посмотрите решение.</string>
+    <string name="practice_answer_is">Ответ: %1$s %2$s</string>
+    <string name="practice_solution">Ход решения</string>
+    <string name="practice_try_again">Ещё раз</string>
+    <string name="practice_show_solution">Решение</string>
+    <string name="practice_next">Следующая задача</string>
+    <string name="practice_finish">Завершить</string>
+
+    <!-- Library -->
+    <string name="library_title">Мини-библиотека</string>
+    <string name="library_subtitle">Частицы и понятия</string>
+    <string name="library_materials_available">Доступно материалов: %1$d</string>
+    <string name="library_definition">Определение</string>
+    <string name="library_characteristics">Характеристики</string>
+    <string name="library_fact">Интересный факт</string>
+
+    <!-- Mission map -->
+    <string name="mission_title">Карта миссий</string>
+    <string name="mission_continue">Продолжить</string>
+    <string name="mission_all_done">Все миссии выполнены!</string>
+    <string name="mission_progress">Завершено миссий: %1$d из %2$d</string>
+    <string name="mission_current">Текущая миссия: %1$s</string>
+    <string name="mission_locked_msg">Эта миссия ещё закрыта. Завершите урок, тест и задачи предыдущей темы.</string>
+    <string name="mission_state_completed">завершено</string>
+    <string name="mission_state_current">текущая миссия</string>
+    <string name="mission_state_locked">заблокировано</string>
+
+    <!-- AR lab -->
+    <string name="ar_title">AR Лаборатория</string>
+    <string name="ar_subtitle">3D-модели</string>
+    <string name="ar_checking">Проверяем поддержку AR…</string>
+    <string name="ar_unavailable">AR недоступна на этом устройстве. Ниже показана интерактивная 3D-модель.</string>
+    <string name="ar_supported_glb">ARCore поддерживается. Модель %1$s найдена.</string>
+    <string name="ar_supported_no_glb">ARCore поддерживается. Для AR-режима добавьте файл assets/models/%1$s. Пока показана 3D-модель.</string>
+    <string name="ar_hint_gestures">Перетаскивайте, чтобы вращать, сводите два пальца для масштаба, дважды коснитесь для сброса.</string>
+    <string name="ar_auto_rotate">Автовращение</string>
+    <string name="ar_model_bohr">Атом Бора</string>
+    <string name="ar_model_proton">Протон</string>
+    <string name="ar_model_neutron">Нейтрон</string>
+    <string name="ar_model_reaction">Ядерная реакция</string>
+
+    <!-- Result -->
+    <string name="result_quiz_passed">Тест пройден!</string>
+    <string name="result_quiz_failed">Попробуйте ещё раз</string>
+    <string name="result_practice_title">Задачи завершены!</string>
+    <string name="result_lesson_title">Урок завершён!</string>
+    <string name="result_score">%1$d / %2$d верно</string>
+    <string name="result_solved">Решено задач: %1$d / %2$d</string>
+    <string name="result_xp_already">Новых XP нет — они уже были начислены.</string>
+    <string name="result_xp_need_pass" formatted="false">Чтобы получить XP, ответьте верно минимум на 60%.</string>
+    <string name="result_total_xp">Всего: %1$d XP</string>
+    <string name="result_topic_complete">Тема полностью пройдена! Следующая миссия открыта.</string>
+    <string name="result_next_lesson">К уроку</string>
+    <string name="result_next_quiz">К тесту</string>
+    <string name="result_next_practice">К задачам</string>
+    <string name="result_open_map">Карта миссий</string>
+    <string name="result_retry">Пройти снова</string>
+    <string name="result_to_topics">Вернуться к темам</string>
+</resources>
